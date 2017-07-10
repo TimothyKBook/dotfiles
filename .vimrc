@@ -9,6 +9,12 @@ set wildmenu
 set smartindent
 set autoindent
 set backspace=indent,eol,start
+set clipboard=unnamed
+
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
 
 """ Set up Vundle
 set nocompatible
@@ -25,6 +31,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-surround'
+Plugin 'mattn/emmet-vim'
 
 " End Vundle
 call vundle#end()
