@@ -10,6 +10,7 @@ set smartindent
 set autoindent
 set backspace=indent,eol,start
 set clipboard=unnamed
+set belloff=all
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
