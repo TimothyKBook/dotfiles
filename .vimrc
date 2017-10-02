@@ -1,6 +1,5 @@
 " Basic Settings
 syntax on
-colorscheme evening
 set guifont=consolas:h10
 set relativenumber
 set tabstop=2
@@ -33,8 +32,11 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'chrisbra/Colorizer'
 
 " End Vundle
 call vundle#end()
 filetype plugin indent on
 
+colorscheme monokai
