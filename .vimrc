@@ -42,7 +42,7 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
-colorscheme dracula
+colorscheme madeofcode
 set guifont=consolas:h10
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
