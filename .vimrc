@@ -44,5 +44,7 @@ filetype plugin indent on
 
 colorscheme madeofcode
 set guifont=consolas:h10
+
+" Closes vim if only NERDTree is open.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
