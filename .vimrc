@@ -30,21 +30,26 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Other Plugins from GitHub
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'chrisbra/Colorizer'
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'davidhalter/jedi-vim'
 
 " End Vundle
 call vundle#end()
 filetype plugin indent on
 
-colorscheme madeofcode
+colorscheme onedark
 set guifont=consolas:h10
 
 " Closes vim if only NERDTree is open.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Airline settings
+let g:airline_theme='onedark'
