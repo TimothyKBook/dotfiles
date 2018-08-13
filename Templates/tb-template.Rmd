@@ -1,0 +1,14 @@
+---
+title: "Timothy K. Book's Memo"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    keep_tex: false
+    highlight: tango
+    includes:
+      in_header: ~/Templates/themeheader.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```

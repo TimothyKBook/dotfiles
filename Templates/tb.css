@@ -1,0 +1,12 @@
+body {
+    font-family: Ubuntu;
+    color: #2C3539; /*Gunmetal grey*/
+}
+
+h1 {
+    color: #204A87; /*Tango blue*/
+}
+
+h2, h3, h4, h5, h6 {
+    color: #4E9A06; /*Tango green*/
+}
