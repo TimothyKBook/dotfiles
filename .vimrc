@@ -1,7 +1,6 @@
 " Basic Settings
 syntax on
-set tabstop=2
-set shiftwidth=2
+set tabstop=4 shiftwidth=4 expandtab
 set wildmenu
 set smartindent
 set autoindent
@@ -9,6 +8,8 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 set belloff=all
 set number
+set splitbelow
+set splitright
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -39,7 +40,11 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'chrisbra/Colorizer'
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'jalvesaq/vimcmdline'
+Plugin 'pangloss/vim-javascript'
+Plugin 'prabirshrestha/asyncomplete.vim'
+Plugin 'vim-python/python-syntax'
 
 " End Vundle
 call vundle#end()
@@ -53,3 +58,20 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Airline settings
 let g:airline_theme='onedark'
+let g:airline_section_z=airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
+
+" Transparent background while in vim
+hi Normal guibg=NONE ctermbg=NONE
+
+" Vertical guide at 80th character 
+set cc=80
+
+" Javascript syntax highlight settings
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+
+" Javascript autocomplete
+let g:asyncomplete_auto_popup = 1
+
+" Better Python Syntax Hightlighting
+let g:python_highlight_all = 1
