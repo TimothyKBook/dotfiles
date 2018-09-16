@@ -11,6 +11,14 @@ set number
 set splitbelow
 set splitright
 
+au BufNewFile, BufRead *.md
+    \ set textwidth=80
+
+au BufNewFile, BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
@@ -30,6 +38,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Other Plugins from GitHub
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
@@ -43,8 +52,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'jalvesaq/vimcmdline'
 Plugin 'pangloss/vim-javascript'
-Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'vim-python/python-syntax'
+Plugin 'briancollins/vim-jst'
+Plugin 'jalvesaq/Nvim-R'
+Plugin 'vim-ruby/vim-ruby'
 
 " End Vundle
 call vundle#end()
@@ -70,8 +81,11 @@ set cc=80
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 
-" Javascript autocomplete
-let g:asyncomplete_auto_popup = 1
-
 " Better Python Syntax Hightlighting
 let g:python_highlight_all = 1
+
+" NERD Commenter
+let g:NERDSpaceDelims = 1
+
+" YouCompleteMe autoclose
+let g:ycm_autoclose_preview_window_after_completion = 1

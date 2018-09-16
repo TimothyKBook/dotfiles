@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mytheme}[8/11/2018 Test Theme]
+\ProvidesClass{tbtheme}[8/11/2018 Test Theme]
 \LoadClass{article}
 
 \RequirePackage{fontspec}

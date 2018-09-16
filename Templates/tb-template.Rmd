@@ -6,7 +6,7 @@ output:
     keep_tex: false
     highlight: tango
     includes:
-      in_header: ~/Templates/themeheader.tex
+      in_header: ~/Templates/tb-theme-rmd.tex
 ---
 
 ```{r setup, include=FALSE}
